@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velox</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="Css/Base/style.css">
+    <link rel="stylesheet" href="Css/Overrides/style_coreccion.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#Hero_Section">
+          <img src="Assets/img/LOGO-BICICLETAS.png" alt="Velox, bicicletas y repuestos" height="64" loading="lazy" />
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="#Hero_Section">Hero</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Nosotros_Section">Sobre nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Section_Productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Ubicaciones_Section">Ubicaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#mv_section">Misión y visión</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+              <ul class="dropdown-menu p-2 m-1">
+                <li><a class="dropdown-item" href="Topics/Carrito.html">Carrito</a></li>
+                <li><a class="dropdown-item" href="Topics/Inicio_sesion.html">Inicio de sesión</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search" aria-label="Buscar productos">
+            <label for="site-search" class="visually-hidden">Buscar</label>
+            <input id="site-search" class="form-control me-2" type="search" placeholder="Buscar…" aria-label="Buscar" />
+            <button class="btn btn-primary" type="submit">
+              <i class="bi bi-search" aria-hidden="true"></i>
+              <span class="visually-hidden">Buscar</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <!-- Main  -->
+    <main>
+
+        <!-- Hero section -->
+        <section class="section_hero " id="Hero_Section">
+            <div class="hero_section">
+                <div class="py-5 container d-flex flex-column align-items-center my-5">
+                    <h1 class="mb-4 text-light h1 d-flex justify-content-center align-items-center ">
+                        !Aprovecha el 20% de descuento!</h1>
+                    <p class="text-light lead ps-3">
+                    En Velox te ofrecemos calidad, garantía y los mejores precios en bicicletas y repuestos.”
+                    </p>
+                    <a class="px-3 py-2 btn btn-warning btn-lg" href="Topics/Inicio_sesion.html">
+                                                    Compra ahora
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Sobre Nosotros  -->
+        <section class="container-fluid" id="Nosotros_Section">
+            <div class="container p-4 my-3">
+                <h2 class="text-primary h1">Sobre nosotros</h2>
+                <h3 class="m-1">¿Quienes somos? <i class="bi bi-person-check"></i></h3>
+                <p class="ms-3">En Velox creemos que cada pedalada cuenta. Somos una empresa guatemalteca dedicada a la
+                    venta de bicicletas, accesorios y repuestos de la mejor calidad, comprometidos con impulsar un
+                    estilo de vida saludable, ecológico y lleno de energía.</p>
+            </div>
+        </section>
+
+        <!-- Section Nuestros productos -->
+        <section id="Section_Productos">
+            <div class="container p-4 my-3 d-flex flex-column justify-content-center text-center">
+                <h2 class="text-primary h1 mx-4">Nuestros productos <i></i></h2>
+
+                <div
+                    class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mx-4 justify-content-center text-center align-items-center">
+
+                    <div class="col-12 col-md-4  d-flex justify-content-center align-items-center text-center">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <a href="#"><img src="Assets/img/bi-ciudad.png" alt="Bicicleta urbana Velox CityRide 700C" width="130"  loading="lazy"></a>
+                                <h5 class="card-title text-primary">Velox CityRide 700C</h5>
+                                <p class="card-text">Diseñada para desplazamientos cómodos en la ciudad.
+                                    Cuenta con asiento ergonómico, transmisión Shimano y diseño moderno.</p>
+                                <p class="card-text "><strong>Q.7,599.99</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary w-100" href="Topics/Inicio_sesion.html">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="Assets/img/bi-doble.png" alt="" width="180" class="my-3"  loading="lazy">
+                                </a>
+                                <h5 class="card-title text-primary">Bicicleta Velox Junior 20</h5>
+                                <p class="card-text">Perfecta para los más pequeños.
+                                    Estructura resistente, colores llamativos y frenos seguros.</p>
+                                <p class="card-text "><strong>Q9,299.00</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary w-100" href="Topics/Inicio_sesion.html">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="Assets/img/montaña.png" alt="" width="180" class="my-2" loading="lazy">
+                                </a>
+                                <h5 class="card-title text-primary">Velox X-Trail 29</h5>
+                                <p class="card-text">Preparada para senderos exigentes y aventuras off-road.
+                                </p>
+                                <p class="card-text"> <strong>Q.5,799.00</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary w-100" href="Topics/Inicio_sesion.html">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#">
+                                    <img src="Assets/img/bici_electrica.png" alt="" width="220px" class="my-2"  loading="lazy">
+                                </a>
+                                <h5 class="card-title text-primary">Velox E-Ride</h5>
+                                <p class="card-text">Asistencia eléctrica para trayectos más largos y cómodos.
+                                </p>
+                                <p class="card-text"> <strong>Q.3,799.00</strong></p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary w-100" href="Topics/Inicio_sesion.html">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Ubicaciones -->
+        <section class="container-fluid container" id="Ubicaciones_Section">
+            <h2 class="text-primary py-4 h1">Nuestras ubicaciones</h2>
+
+            <div class="container border rounded p-4 row g-4 m-1 d-flex text-center" id="section_ubicaciones">
+
+                <p class="lead mb-5">
+                    En <strong>Velox</strong> estamos presentes en distintos puntos del país.
+                    ¡Visítanos en la sucursal más cercana y vive la experiencia de pedalear con nosotros!
+                </p>
+
+                <div class="col-md-5 col-lg-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Mahadas
+                            </h5>
+                            <p class="card-text mb-2">Centro Comercial Mahadas, Zona 11</p>
+                            <p class="text-muted small mb-0">Horario: Lun-Sáb 9:00am – 7:00pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-3">
+                    <div class="card shadow-sm border-1 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Zona 10 – Oakland Mall
+                            </h5>
+                            <p class="card-text mb-2">Nivel 1, local #24</p>
+                            <p class="text-muted small mb-0">Horario: Lun-Sáb 9:00am – 7:00pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Zona 14 – Vista Hermosa
+                            </h5>
+                            <p class="card-text mb-2">Boulevard Vista Hermosa, local #5</p>
+                            <p class="text-muted small mb-0">Horario: Lun-Sáb 9:00am – 7:00pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-3">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">
+                                <i class="bi bi-geo-alt-fill me-1"></i> Calzada San Juan – Zona 7
+                            </h5>
+                            <p class="card-text mb-2">Frente al Centro Comercial Tikal Futura</p>
+                            <p class="text-muted small mb-0">Horario: Lun-Sáb 9:00am – 7:00pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30884.962139159557!2d-90.5682003384844!3d14.620694957401794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a110e16ca3d3%3A0xc69355632110809e!2sCentro%20Comercial%20Miraflores!5e0!3m2!1ses-419!2sgt!4v1761855403725!5m2!1ses-419!2sgt"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- mision y vision -->
+        <section class="container-fluid py-4" id="mv_section">
+
+            <h2 class="text-primary my-3 h1 container">Nuestra mision y vision</h2>
+
+            <div class="row row-cols-1 row-cols-lg-2 g-1 d-flex justify-content-center">
+
+                <div class="card col mx-5 my-4" id="sm_2">
+                    <div class="card-body text-center bg-primary border rounded" id="sm_3">
+                        <h4 class="text-light text-center>
+                            <i class="bi bi-bicycle fs-3"></i>
+                            Mision
+                        </h4>
+                    </div>
+                    <div >
+                        <p class="card-text p-3 text-muted">En Velox tenemos la misión de ofrecer bicicletas, repuestos
+                            y accesorios de la
+                            más
+                            alta
+                            calidad,
+                            brindando a nuestros clientes una experiencia de compra confiable, accesible y con
+                            atención
+                            personalizada.</p>
+                    </div>
+                </div>
+                <div class="card col mx-5 my-4" id="sv_2">
+                    <div class="card-body bg-success border rounded text-center" id="sv_3">
+                        <h4 class="text-center  text-light">
+                            <i class="bi bi-globe"></i>
+                            Vision
+                        </h4>
+                    </div>
+                    <div>
+                        <p class="card-text py-3 px-3 text-muted ">Ser la tienda líder en el mercado nacional de
+                            bicicletas, reconocida por nuestra
+                            innovación,
+                            compromiso con la calidad y por inspirar a más personas a adoptar un estilo de vida sostenible.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <Footer class="bg-secondary text-white">
+        <div class="d-flex justify-content-center text-center flex-column container p-4">
+            <div>
+                <p> &copy; 2025 Velox. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+                <a href="mailto:veloxgmail.com" class="link-light"><i>@Veloxgmail.com</i></a>
+            </div>
+        </div>
+
+    </Footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

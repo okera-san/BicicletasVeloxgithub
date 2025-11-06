@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../Css/Base/Crear_csuenta.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <!-- NAV -->
+          <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="../Index.html"><img style="height: 100px;" src="../Assets/img/LOGO-BICICLETAS.png"
+                        alt=""  loading="lazy"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page" href="../Index.html#Hero_section">Hero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="../Index.Index.html#Nosotros_Section">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="../Index.Index.html#Section_Productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Index.Index.html#Ubicaciones_Section" class="nav-link text-black">Ubicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Index.Index.html#mv_section" class="nav-link text-black">Mision y vision</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <strong>Servicios</strong>
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <li><a class="dropdown-item m-1" href="../Topics/Carrito.html">Carrito</a></li>
+                                <li><a class="dropdown-item m-1" href="../Topics/Inicio_sesion.html">Inicio de sesion</a></li>
+                                <li>
+                                    <form action="" class="d-flex">
+                                        <input type="text" class="form-control mx-2" placeholder="Buscar..."
+                                            type="search">
+                                        <button class="btn btn-outline-warning" type="submit">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container container-fluid p-5">
+            <div class="card d-flex align-items-center pb-5">
+                <img src="../Assets/img/LOGO-BICICLETAS.png" alt="Logo de la marca velox"  loading="lazy">
+                <p class="text-warning h3">Crear Cuenta</p>
+                <form action="" class="d-flex card p-3 mx-3">
+                    <label for="" class="form-label m-2">Ingrese su correo:</label>
+                    <input type="text" placeholder="Correo Electronico" type="email" class="form-control w-75 mx-2">
+
+                    <label for="inputPassword5" class="form-label m-2">Contraseña:</label>
+                    <input type="password" id="inputPassword5" class="form-control w-75 mx-2"
+                        aria-describedby="passwordHelpBlock">
+
+                    <button class="btn btn-outline-dark mx-5 my-3" type="submit">Crear cuenta</button>
+
+                    <a href="#">¿Haz olvidado tu contraseña?</a>
+                    <hr>
+
+                    <a class="btn btn-outline-danger" href="Inicio_sesion.html">Iniciar Sesion</a>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <Footer class="bg-secondary">
+        <div class="d-flex justify-content-center text-center flex-column container p-4">
+            <div>
+                <p> &copy; 2025 Velox. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-whatsapp"></i>
+                <a href="#" class="text-black"><i>@Veloxgmail.com</i></a>
+            </div>
+        </div>
+
+    </Footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

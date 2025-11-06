@@ -1,0 +1,112 @@
+ *, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body{
+    overflow-x: hidden;
+} 
+
+/* colores */
+:root{
+  --velox-hero-bg: #0b132b;   /* fondo hero oscuro */
+  --velox-hero-text: #f8f9fa; /* texto claro */
+  --velox-card-border: #e9ecef;
+}
+
+/* tipogrfia */
+h1, h2, h3 { 
+    font-family: "Oswald", sans-serif; 
+}
+p, li, a, button, input { 
+    font-family: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif; 
+}
+.btn { 
+    font-family: "Poppins", Arial, Helvetica, sans-serif; 
+}
+
+/* NAV */
+nav {
+    background-image: url(../../Assets/img/fondo2.jpg);
+    background-size: cover;
+    justify-content: space-aroundcc;
+}
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+/* .section_hero {
+    border: solid 1px;
+    background-image: url(Assets/img/fondo3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+} */
+ /* .section_hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.174);
+    z-index: 1;
+} */
+
+
+/* hero ovrlay */
+.section_hero{     
+    background: linear-gradient(rgba(0, 0, 0, 0.438) , rgba(0, 0, 0, 0.11)), url(../../Assets/img/fondo3.jpg) center/cover no-repeat;
+    height: 70vh;
+    border: solid 1px black;
+}
+.hero_section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 65vh;
+}
+
+.section_hero {
+    color: white;
+}
+
+/* productos */
+.card {
+    max-width: 15rem;
+    margin: px;
+    padding: 0;
+}
+.card img{
+  object-fit: contain;
+  max-height: 180px;
+}
+
+#section_productos{
+    background-color: rgb(245, 245, 245);
+}
+
+#section_ubicaciones {
+    background-color: rgba(242, 250, 255, 0.637);
+}
+
+#section_mision {
+    background-color: rgb(255, 255, 255);
+}
+
+/* mision y vision */
+#sm_2{
+    border: solid 3px rgba(154, 154, 154, 0.37);
+    border-radius: 10px;
+}
+#sm_3{
+    background-image: linear-gradient(to right, rgb(0, 136, 160), rgb(0, 166, 255), rgb(0, 136, 160));
+    border: solid 0px !important;
+    padding-bottom: -0.25rem;
+}
+#sv_2{
+    border: solid 3px rgba(154, 154, 154, 0.438);
+    border-radius: 10px;
+}
+#sv_3{
+    background-image: linear-gradient(to right, rgb(47, 193, 31), rgb(27, 229, 0), rgb(17, 168, 0));
+}
+
+

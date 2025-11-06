@@ -1,0 +1,20 @@
+
+/* seciton mision vision */
+
+#sm_2{
+    padding: 0px !important;
+}
+#section_mision{
+    max-width: 50rem;  
+}
+
+.section_hero {
+    position: ;
+    z-index: 2;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 .2rem rgba(13,110,253,.25);
+}
+.card-title{
+  margin-bottom: 0.50rem;
+}
