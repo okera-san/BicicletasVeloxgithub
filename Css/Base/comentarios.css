@@ -1,0 +1,109 @@
+:root{
+  /* Ajusta estos HEX a tu paleta oficial */
+  --velox-primary: #111111;      /* Negro carbón */
+  --velox-accent:  #FFD200;      /* Amarillo acento deportivo */
+  --velox-accent-2:#FF7A00;      /* Naranja secundario (opcional) */
+  --velox-bg:      #0B0B0B;      /* Fondo oscuro */
+  --velox-surface: #151515;      /* Tarjetas */
+  --velox-text:    #F5F5F5;      /* Texto principal */
+  --velox-muted:   #9CA3AF;      /* Texto secundario */
+  --velox-ok:      #22C55E;
+  --velox-danger:  #EF4444;
+  --ring:          3px;
+}
+
+.feedback-section{
+  background: radial-gradient(1200px 600px at 80% -10%, rgba(255,210,0,0.15), transparent 60%),
+              linear-gradient(180deg, #0b0b0b, #0e0e0e);
+  color: var(--velox-text);
+}
+
+.feedback-section .card{
+  background: linear-gradient(180deg, var(--velox-surface), #101010);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+h2{ color: var(--velox-text); }
+.text-muted{ color: var(--velox-muted) !important; }
+
+/* Botones marca */
+.btn-velox{
+  background: var(--velox-accent);
+  color: #111;
+  border: none;
+  transition: transform .06s ease, box-shadow .2s ease;
+  box-shadow: 0 10px 24px rgba(255,210,0,.25);
+}
+.btn-velox:hover{ transform: translateY(-1px); }
+.btn-velox:focus-visible{ outline: var(--ring) solid rgba(255,210,0,.6); }
+
+.btn-outline-velox{
+  background: transparent;
+  color: var(--velox-accent);
+  border: 1px solid rgba(255,210,0,.4);
+}
+.btn-outline-velox:hover{
+  background: rgba(255,210,0,.08);
+}
+
+/* Campos */
+.form-control, .form-select{
+  background: #0F0F0F;
+  color: var(--velox-text);
+  border: 1px solid #232323;
+  border-radius: 10px;
+}
+.form-control::placeholder{ color: #6B7280; }
+.form-control:focus, .form-select:focus{
+  border-color: var(--velox-accent);
+  box-shadow: 0 0 0 var(--ring) rgba(255,210,0,.25);
+}
+
+/* Estados de validación accesibles */
+.is-invalid, .form-control:invalid:focus, .form-select:invalid:focus{
+  border-color: var(--velox-danger);
+  box-shadow: 0 0 0 var(--ring) rgba(239,68,68,.2);
+}
+.is-valid, .form-control:valid:focus, .form-select:valid:focus{
+  border-color: var(--velox-ok);
+  box-shadow: 0 0 0 var(--ring) rgba(34,197,94,.2);
+}
+
+/* Rating de estrellas interactivo (teclado + puntero) */
+.rating{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  gap: .25rem;
+}
+.rating input{
+  position: absolute;
+  left: -9999px;
+}
+.rating label{
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  transition: transform .08s ease, color .2s ease, text-shadow .2s ease;
+  text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+.rating label:hover,
+.rating label:focus{
+  transform: translateY(-2px) scale(1.03);
+}
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label{
+  color: var(--velox-accent);
+  text-shadow: 0 6px 18px rgba(255,210,0,.35);
+}
+/* Enfoque accesible para las etiquetas (teclado) */
+.rating label:focus-visible{
+  outline: var(--ring) solid rgba(255,210,0,.5);
+  border-radius: 6px;
+}
+
+/* Toast */
+.toast{
+  border-radius: 12px;
+}

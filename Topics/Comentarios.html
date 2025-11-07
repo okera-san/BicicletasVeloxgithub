@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../Css/Base/comentarios.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="../index.html"><img style="height: 100px;"
+                        src="../Assets/img/LOGO-BICICLETAS.png" alt="" loading="lazy"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-black" aria-current="page"
+                                href="../index.html#Hero_section">Hero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="../index.Index.html#Nosotros_Section">Sobre
+                                Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="../index.Index.html#Section_Productos">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../index.Index.html#Ubicaciones_Section"
+                                class="nav-link text-black">Ubicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../index.Index.html#mv_section" class="nav-link text-black">Mision y vision</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <strong>Servicios</strong>
+                            </a>
+                            <ul class="dropdown-menu p-2">
+                                <li><a class="dropdown-item m-1" href="../Topics/Carrito.html">Carrito</a></li>
+                                <li><a class="dropdown-item m-1" href="../Topics/Inicio_sesion.html">Inicio de
+                                        sesion</a></li>
+                                <li>
+                                    <form action="" class="d-flex">
+                                        <input type="text" class="form-control mx-2" placeholder="Buscar..."
+                                            type="search">
+                                        <button class="btn btn-outline-warning" type="submit">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="feedback-section" aria-labelledby="feedback-title">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <header class="mb-4 text-center">
+                            <h2 id="feedback-title" class="fw-bold">¿Qué te pareció tu experiencia con Velox?</h2>
+                            <p class="text-muted mb-0">Tus comentarios nos ayudan a mejorar cada ruta.</p>
+                        </header>
+
+                        <form class="card shadow-lg border-0 needs-validation" novalidate action="https://formspree.io/f/xpwovewq" method="post">
+                            <div class="card-body p-4 p-md-5">
+                                <!-- Calificación con estrellas -->
+                                <fieldset class="mb-4" aria-describedby="rating-help">
+                                    <legend class="form-label fw-semibold mb-2">Califica tu experiencia</legend>
+                                    <div class="rating" role="radiogroup" aria-label="Calificación de 1 a 5">
+                                        <input type="radio" name="rating" id="rate-5" value="5" required>
+                                        <label for="rate-5" aria-label="5 estrellas">★</label>
+                                        <input type="radio" name="rating" id="rate-4" value="4">
+                                        <label for="rate-4" aria-label="4 estrellas">★</label>
+                                        <input type="radio" name="rating" id="rate-3" value="3">
+                                        <label for="rate-3" aria-label="3 estrellas">★</label>
+                                        <input type="radio" name="rating" id="rate-2" value="2">
+                                        <label for="rate-2" aria-label="2 estrellas">★</label>
+                                        <input type="radio" name="rating" id="rate-1" value="1">
+                                        <label for="rate-1" aria-label="1 estrella">★</label>
+                                    </div>
+                                    <div id="rating-help" class="form-text">Selecciona una opción entre 1 y 5.</div>
+                                    <div class="invalid-feedback d-block" data-invalid-rating style="display:none;">Por
+                                        favor selecciona una calificación.</div>
+                                </fieldset>
+
+                                <!-- Nombre y email -->
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-6">
+                                        <label for="name" class="form-label">Nombre</label>
+                                        <input id="name" name="name" type="text" class="form-control"
+                                            placeholder="Tu nombre" required>
+                                        <div class="invalid-feedback">Ingresa tu nombre.</div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Correo</label>
+                                        <input id="email" name="email" type="email" class="form-control"
+                                            placeholder="tucorreo@ejemplo.com" required>
+                                        <div class="invalid-feedback">Ingresa un correo válido.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo de feedback -->
+                                <div class="mb-3">
+                                    <label for="topic" class="form-label">Tipo de comentario</label>
+                                    <select id="topic" name="topic" class="form-select" required>
+                                        <option value="" selected disabled>Elige una opción</option>
+                                        <option>Producto</option>
+                                        <option>Tienda / Servicio</option>
+                                        <option>Sitio web</option>
+                                        <option>Otro</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecciona un tipo de comentario.</div>
+                                </div>
+
+                                <!-- Mensaje -->
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Tu comentario</label>
+                                    <textarea id="message" name="message" class="form-control" rows="5"
+                                        placeholder="Cuéntanos los detalles..." required minlength="10" maxlength="1000"
+                                        aria-describedby="message-count"></textarea>
+                                    <div class="d-flex justify-content-between mt-1">
+                                        <div class="invalid-feedback d-block" style="display:none;"
+                                            data-invalid-message>El comentario debe tener al menos 10 caracteres.</div>
+                                        <small id="message-count" class="form-text ms-auto">0/1000</small>
+                                    </div>
+                                </div>
+
+                                <!-- Consentimiento -->
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" value="yes" id="consent" required>
+                                    <label class="form-check-label" for="consent">
+                                        Acepto el uso de mis datos para mejorar los servicios de Velox.
+                                    </label>
+                                    <div class="invalid-feedback">Debes aceptar para continuar.</div>
+                                </div>
+
+                                <!-- Botones -->
+                                <div class="d-grid d-sm-flex gap-2">
+                                    <button type="submit" class="btn btn-velox btn-lg">Enviar comentario</button>
+                                    <button type="reset" class="btn btn-outline-velox btn-lg">Limpiar</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Toast de confirmación -->
+                        <div class="toast align-items-center text-bg-success border-0 position-fixed bottom-0 end-0 m-3"
+                            role="status" aria-live="polite" aria-atomic="true" id="feedbackToast">
+                            <div class="d-flex">
+                                <div class="toast-body">
+                                    ¡Gracias! Recibimos tu comentario.
+                                </div>
+                                <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
