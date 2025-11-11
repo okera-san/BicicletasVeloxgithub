@@ -7,8 +7,8 @@ html, body{
 
 /* colores */
 :root{
-  --velox-hero-bg: #0b132b;   /* fondo hero oscuro */
-  --velox-hero-text: #f8f9fa; /* texto claro */
+  --velox-bg: #0b132b;   
+  --velox-white: #f8f9fa; 
   --velox-card-border: #e9ecef;
 }
 
@@ -34,13 +34,6 @@ nav {
   z-index: 1;
 }
 
-/* .section_hero {
-    border: solid 1px;
-    background-image: url(Assets/img/fondo3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-} */
  /* .section_hero::before {
     content: "";
     position: absolute;
@@ -65,7 +58,7 @@ nav {
 }
 
 .section_hero {
-    color: white;
+    color: var(--velox-white);
 }
 
 /* productos */
@@ -80,16 +73,13 @@ nav {
 }
 
 #section_productos{
-    background-color: rgb(245, 245, 245);
+    background-color: var(--velox-white);
 }
 
 #section_ubicaciones {
-    background-color: rgba(242, 250, 255, 0.637);
+    background-color: var(--velox-card-border);
 }
 
-#section_mision {
-    background-color: rgb(255, 255, 255);
-}
 
 /* mision y vision */
 #sm_2{
